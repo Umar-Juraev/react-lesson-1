@@ -6,7 +6,9 @@ function Home() {
     return (
         <main>
 
-            {/* home */}
+            home
+
+            <h1>alksdjlkasjdlkasjkdl</h1>
         </main>
     )
 }
