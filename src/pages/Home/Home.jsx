@@ -1,14 +1,32 @@
 
 
 import './Home.scss'
+import bg from '../../assets/images/homePageBg.jpg'
 
-function Home() {
+function Home({data}) {
+
+
+
     return (
-        <main>
+        <main className='home' style={{ backgroundImage: `url(${bg})` }}>
 
-            home
+            <section className='home__row'>
+                <div className='home__row__textBox'>asda</div>
+                <div className='home__row__btn'>EXPLORE</div>
+            </section>
 
-            <h1>alksdjlkasjdlkasjkdl</h1>
+
+
+
+
+            {data.map(({id,name,describtion,img})=>(
+                <div key={id}>
+                    <h3>{name}</h3>
+                    <p>{describtion}</p>
+                </div>
+            ))}
+
+            
         </main>
     )
 }

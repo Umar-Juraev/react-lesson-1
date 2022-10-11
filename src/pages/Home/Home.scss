@@ -1,0 +1,33 @@
+@import '../../assets/style/_colors';
+
+
+.home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        &__textBox {
+            position: absolute;
+            bottom: 131px;
+            left: 165px;
+        }
+
+        &__btn {
+            position: absolute;
+            bottom: 131px;
+            right: 165px;
+            width: 274px;
+            height: 274px;
+            border-radius: 50%;
+            background-color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

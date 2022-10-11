@@ -1,22 +1,18 @@
 import './Header.scss'
 
-function Header(){
+import { Link } from 'react-router-dom'
 
+function Header() {
 
-    const style ={
-        padding: '25px',
-        backgroundColor: 'red'
-    }
-
-    return(
-        <div className=''  style={style}>
+    return (
+        <header className='header'>
             <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">destination</a></li>
-                <li><a href="">crew</a></li>
-                <li><a href="">technology</a></li>
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/destination">destination</Link></li>
+                <li><Link to="/crew">crew</Link></li>
+                <li><Link to="/technology">technology</Link></li>
             </ul>
-        </div>
+        </header>
     )
 }
 export default Header
