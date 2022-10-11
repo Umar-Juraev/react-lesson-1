@@ -37,6 +37,7 @@ function App() {
   return (
     <div>
       <Header />
+      <h1>abdurahmon</h1>
       <Routes>
         <Route path="/" element={<Home data={planets} />} />
         <Route path="/destination" element={<Destination data={planets} />} />
